@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face { /*tipos de fuente para cada titulo, subtitulo o parrafo, segun lo requiera*/
+    font-family: BAKINGSAUCE;
+    src: url(fuentes/BAKINGSAUCE.otf)
+  }
+
+@font-face {
+    font-family: kablam;
+    src: url(fuentes/Ka\ Blam.ttf)
+  }
+@font-face {
+    font-family: cuteNotes;
+    src: url(fuentes/Cute\ Notes.ttf)
+  }
+@font-face {
+    font-family: magic nigth;
+    src: url(fuentes/MAGIC\ NIGHT.otf)
+  }
+@font-face {
+    font-family: winnie beigee;
+    src: url(fuentes/Winie\ Beige.ttf)
+  }
+@font-face {
+    font-family: supeer mario;
+    src: url(fuentes/SuperMario256.ttf)
+  }
+
+body{
+    font-family: "Poppins", sans-serif;
+    background: #03111b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container {
+    width: 100%;
+}
+.header{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.9)),
+        url(imagenes/jota19.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px; /*modifica el tamaño de altura de la cabecera de la pagina web*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: rgb(248, 7, 47);
+    font-size: 25px;
+    font-weight: 800px;
+}
+.logo img{
+    width: 90px;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(243, 7, 7);
+    display: block;
+    font-weight: 600px;
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.menu .navbar ul li a:hover{
+    color: #5a0a15; /*el hover nos sirve para remarcar de otro color el menu cuandop pasamos el mouse encima*/
+}
+/*.navbar li{
+    border: 2px #c95d04 solid;
+    border-radius: 100px;
+}*/
+#menu{
+    display: none;
+}
+.menu-icono {
+    width: 38px;
+}
+
+.menu label{
+    cursor: pointer; /*funciona para la manita siempre que pasemos por el menu*/
+    display: none;
+}
+.header-content{
+    text-align: center; /*nos ayuda a centrar todos los elementos del contenido de la clase header*/
+
+
+}
+.header-content h1{
+    font-size: 85px; /**/
+    line-height: 80px; /*altura de nuestra letra*/
+    color: rgb(255, 238, 0);
+    text-transform: uppercase; /*nos ayuda a transformar la letra a mayusculas */
+    margin-bottom: 35px; /*la separacion hacia abajo*/
+    font-family: supeer mario; /*Fuente de el titulo de pagina web*/
+}
+.header-content p{
+    font-size: 20px;
+    color: rgb(160, 218, 1);
+    padding: 0 250px;
+    margin-bottom: 40px;
+}
+.btn-1{
+    display: inline-block; /* convertimos los enlaces tipo texto a block o botton para que podamos usar los padding y demas opciones*/
+    padding: 11px 35px; 
+    background-color: #8b1414; /*fondo del boton*/
+    color: #f9fafc; /*colos de la letra del boton*/
+    text-transform: uppercase; 
+}
+.btn-1:hover {
+    background-color: #e69d59 ; 
+}
+#main{
+    width: 100%;
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#columna-izquierda{
+    width: 70%;
+    background-color: #0d2033f6;
+    box-shadow: 1px 1px 10px #000;
+    padding: 20px;
+}
+.novedades {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    font-family: winnie beigee;
+}
+article{
+    width: 100%;
+    background-color: #0a1a2a;
+    /*height: 250px;*/
+    margin-bottom: 10px;
+    text-align: center;
+}
+article h3{
+    text-align: left;
+    margin: 10px;
+    font-size: 25px;
+    color: azure;
+}
+article img{
+    /*height: 150px;*/
+    /*float: left;*/
+    padding: 40px;
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+}
+article p{
+    font-size: 20px;
+    color: antiquewhite;
+    padding-top: 10px;
+    text-align: start;
+    margin: 10px; /*nos ayuda a que los parrafos no esten pegados al borde del limite*/
+}
+aside{
+    width: 30%; 
+    background-color: #1e168b;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden; /*hace que el texto se mantenga dentro del aside*/
+}
+aside h2{
+    font-size: 25px;
+    margin: 10px;
+    color: azure;
+}
+aside p{
+    font-size: 15px;
+    margin: 10px;
+    color: antiquewhite;
+    word-wrap: break-word;
+}
+aside img{
+    width: 100%; /*lo mejor para las imagenes es trabajar con porcentajes*/
+    margin-top: 10px;
+}
+aside iframe{
+    width: 100%;
+    height: 250px;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #000508;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;   
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #000508;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+form{
+    background-color: #253546;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+    text-align: center;
+    margin: auto; /* con esta opcion hacemos que el formulario se ponga al centro */
+}
+form h2{
+    font-size: 30px;
+    color: #edf0f0;
+    margin-bottom: 35px;
+}
+input{
+    padding: 17px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid rgb(211, 81, 6);
+    margin-bottom: 30px;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+::placeholder{
+    color: #898798;
+}
+.btn-2{
+    background-color: rgb(211, 81, 6);
+    border: 2px solid rgb(211, 81, 6);
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: rgb(219, 108, 43);
+    border: 2px solid rgb(219, 108, 43);
+}
+iframe{
+    width: 700px; 
+    height: 400px;
+}
+@media (max-width: 800px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }   
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #414247;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header{
+        min-height: 0%;
+    }
+    .header-content{
+        padding: 24% 0%;
+    }
+    .header-content h1{
+        font-size: 55px;
+    }
+    .header-content p{
+        padding: 2%;
+        font-size: 15px;
+    }
+    #columna-izquierda {
+        width: 100% !important;
+    }
+    #columna-izquierda h2{
+        font-size: 30px;
+        margin: 10px;
+    }
+    article h3{
+        font-size: 18px;
+    }
+    article p{
+        font-size: 15px;
+    }
+    aside{
+        width: 100%;
+    }
+    iframe{
+        width:400px !important; 
+        height: 250px !important;
+        margin: auto;
+    }
+    form{
+        background-color: #253546;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        min-width: none;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 2);
+        text-align: center;
+        margin: auto; /* con esta opcion hacemos que el formulario se ponga al centro */
+    }
+}
+@media screen and (max-width: 800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+
+    }
+}
